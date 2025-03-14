@@ -21,6 +21,13 @@ This repository contains three Python simulation programs that demonstrate causa
    - Uses vector clocks with a full merge on receive.
    - Displays the updated clock as a simple list.
 
+4. **DistributedChatMatrix.py (Bonus)**  
+   - Simulates a real-world distributed chat application using matrix clocks.
+   - Each process is displayed as its own chat panel showing full matrix clocks (as multi-line strings) along with sent and received messages.
+   - Demonstrates causal ordering with buffering in a more realistic, interactive chat interface.
+   - Includes a scenario where one message is intentionally buffered and later delivered.
+
+
 ---
 
 ## Prerequisites
@@ -73,6 +80,11 @@ Each simulation is a stand-alone Python script. Open a terminal in the repositor
 - **SES Simulation:**
   ```bash
   python SES.py
+  ```
+
+- **Bonus task Simulation:**
+  ```bash
+  python DistributedApp.py
   ```
 
 > **Note:** Depending on your system, you may need to use `python3` instead of `python`.
